@@ -82,14 +82,18 @@ export default defineConfig({
   },
 markdown: {
     math: true
-  }, vite: {
+  }, 
+	vite: {
     ssr: {
-      // 解决 mermaid 插件在 SSR 模式下的解析问题
-      noExternal: ['vitepress-plugin-mermaid', 'mermaid']
+      // 修改这里：增加匹配项，确保处理所有 mermaid 相关的 vue 和 js 文件
+      noExternal: [
+        'vitepress-plugin-mermaid', 
+        'mermaid', 
+        '@mermaid-js/mermaid-mindmap', // 某些版本需要额外显式声明
+        'dayjs' // mermaid 的依赖，SSR 有时也会卡在这
+      ]
     },
-	optimizeDeps: {
-      // 确保开发环境也能正确加载
-      include: ['mermaid']
-    }
-	}
+    // 如果仍然报错，尝试添加这个解析别名（针对某些旧版 Vite 的 Bug）
+    
+  }
 })
