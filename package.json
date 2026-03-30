@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@sugarat/theme": "^0.5.17",
+    "mermaid": "^11.13.0",
     "oh-my-live2d": "^0.19.3",
-    "vitepress-plugin-group-icons": "^1.7.3"
+    "vitepress-plugin-group-icons": "^1.7.3",
+    "vitepress-plugin-mermaid": "^2.0.17"
   },
   "directories": {
     "doc": "docs"
