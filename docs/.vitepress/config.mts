@@ -82,5 +82,14 @@ export default defineConfig({
   },
 markdown: {
     math: true
-  }
+  }, vite: {
+    ssr: {
+      // 解决 mermaid 插件在 SSR 模式下的解析问题
+      noExternal: ['vitepress-plugin-mermaid', 'mermaid']
+    },
+	optimizeDeps: {
+      // 确保开发环境也能正确加载
+      include: ['mermaid']
+    }
+	}
 })
