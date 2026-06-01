@@ -67,3 +67,16 @@ export default defineConfig({
 ④ 推送 `main` 分支即可
 
 需要进一步修改部署和构建配置，详见`deploy.yml` 文件。
+
+mkdir myproject
+cd myproject
+git init
+echo "# myproject" >> README.md
+git add .
+git commit -m "init"
+git remote add origin https://github.com/xxx/xxx.git
+git push -u origin main
+
+git add .
+git commit -m "更新说明"
+git push

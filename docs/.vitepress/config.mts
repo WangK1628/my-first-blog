@@ -10,7 +10,7 @@ const blogTheme = getThemeConfig({
     body: [
       {
         type: 'title',
-        content: '小标题',
+        content: '隔壁小王👑不头秃',
         style: 'color:red'
       },
       { type: 'text', content: '👇公众号👇---👇 微信 👇' },
@@ -22,7 +22,7 @@ const blogTheme = getThemeConfig({
     footer: [
       {
         type: 'text',
-        content: 'footer 与 body 结构一致'
+        content: '你随意篡改我的代码就是画蛇添足'
       },
       {
         type: 'button',

@@ -8,7 +8,7 @@ import { getThemeConfig } from '@sugarat/theme/node'
 // const RSS: Theme.RSSOptions = {
 //   title: '粥里有勺糖',
 //   baseUrl,
-//   copyright: 'Copyright (c) 2018-present, 粥里有勺糖',
+//   copyright: 'Copyright (c) 2018-present, Kevin',
 //   description: '你的指尖,拥有改变世界的力量（大前端相关技术分享）',
 //   language: 'zh-cn',
 //   image: 'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
@@ -31,9 +31,9 @@ const blogTheme = getThemeConfig({
   footer: {
     // message 字段支持配置为HTML内容，配置多条可以配置为数组
     // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
-    copyright: 'MIT License | 粥里有勺糖',
+    copyright: 'MIT License | Kevin',
     // icpRecord: {
-    //   name: '蜀ICP备19011724号',
+    //   name: '',
     //   link: 'https://beian.miit.gov.cn/'
     // },
     // securityRecord: {
@@ -46,7 +46,7 @@ const blogTheme = getThemeConfig({
   themeColor: 'el-blue',
 
   // 文章默认作者
-  author: '粥里有勺糖',
+  author: 'Kevin',
 
   // 友链
   friend: [
@@ -74,7 +74,7 @@ const blogTheme = getThemeConfig({
       {
         type: 'image',
         src: 'https://img.cdn.sugarat.top/mdImg/MTYxNTAxODc2NTIxMA==615018765210~fmt.webp',
-        alt: '粥里有勺糖微信二维码'
+        alt: 'Kevin微信二维码'
       },
       {
         type: 'text',
