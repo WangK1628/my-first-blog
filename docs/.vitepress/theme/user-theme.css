@@ -24,3 +24,28 @@ html[theme],html[theme].dark {
   --vp-c-brand-3: var(--vp-c-user-3);
   --vp-c-brand-soft: var(--vp-c-user-soft);
 }
+
+/* 作者后台页面全屏宽度 */
+.VPContent .admin-page {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.VPContent .admin-page .container {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.admin-page .admin-content {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.admin-page .article-table-wrapper {
+  max-width: none !important;
+  width: 100% !important;
+}

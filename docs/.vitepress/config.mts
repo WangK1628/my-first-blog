@@ -29,7 +29,7 @@ const blogTheme = getThemeConfig({
         link: 'https://kevin1628.vercel.app/',
         content: '作者博客',
         props: {
-          round: true
+          type: 'primary'
         }
       }
     ]
@@ -55,11 +55,13 @@ mermaid: true
 export default defineConfig({
   extends: blogTheme,
   lang: 'zh-cn',
-  title: '@sugarat/theme',
+  title: '@Kevin/theme',
   description: '隔壁小王👑不头秃的博客主题，基于 vitepress 实现',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  ignoreDeadLinks: true,
+  exclude: ['admin.md'],
   themeConfig: {
     outline: {
       level: [2, 3],

@@ -4,7 +4,11 @@ title: 🔧 openclaw&Feishu
 readingTime: true
 tag:
  - 配置
+ - OpenClaw
+ - FeiShu
 recommend: 3
+top: 2
+sticky: 1
 ---
 
 # 一、准备工作
