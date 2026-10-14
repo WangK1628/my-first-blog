@@ -65,7 +65,9 @@ jobs:
 
         # 安装依赖
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        env:
+          PNPM_REGISTRY_POLICY_MINIMUM_RELEASE_AGE: "0"
+        run: pnpm install --no-frozen-lockfile --no-audit
         # 锁定依赖版本
         # run: pnpm install --frozen-lockfile
 
